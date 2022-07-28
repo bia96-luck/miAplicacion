@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">miAplicacion</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_cards_fragment">Tarjetas</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="fab_addCard">Añadir tarjeta</string>
+    <string name="add_card">Añadir tarjeta</string>
+    <string name="store_name">Nombre del comercio</string>
+    <string name="store_notes">Notas</string>
+    <string name="scan_card">Escanear tarjeta</string>
+    <string name="title_fav">Favoritas</string>
+    <string-array name="types">
+        <item>Gasolineras</item>
+        <item>Comercios</item>
+        <item>Supermecados</item>
+        <item>Restaurantes</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.miaplicacion.view.ui.usecases.read.CardFragment"
+        android:label="@string/title_cards_fragment"
+        tools:layout="@layout/fragment_card" >
+        <action
+            android:id="@+id/action_navigation_home_to_addCardFragment"
+            app:destination="@id/addCardFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_readerFragment"
+            app:destination="@id/readerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fav"
+        android:name="com.example.miaplicacion.view.ui.fragments.FavFragment"
+        android:label="@string/title_fav"
+        tools:layout="@layout/fragment_favs" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.miaplicacion.view.ui.fragments.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/addCardFragment"
+        android:name="com.example.miaplicacion.view.ui.usecases.create.AddCardFragment"
+        android:label="fragment_add_card"
+        tools:layout="@layout/fragment_add_card" >
+        <action
+            android:id="@+id/action_addCardFragment_to_cameraScannerActivity"
+            app:destination="@id/cameraScannerActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/readerFragment"
+        android:name="com.example.miaplicacion.view.ui.usecases.read.ReaderFragment"
+        android:label="fragment_reader"
+        tools:layout="@layout/fragment_reader" />
+    <activity
+        android:id="@+id/cameraScannerActivity"
+        android:name="com.example.miaplicacion.view.ui.usecases.create.CameraScannerActivity"
+        android:label="CameraScannerActivity" />
+</navigation>
